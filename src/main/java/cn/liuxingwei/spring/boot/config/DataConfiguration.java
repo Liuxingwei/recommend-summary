@@ -53,18 +53,6 @@ public class DataConfiguration {
                 .getResources("classpath:cn/liuxingwei/spring/boot/orm/mapper/**/*.xml");
         sqlSessionFactoryBean.setMapperLocations(resources);
 
-        /** 以下设置只是使用java配置设置sqlSessionFactoryBean的属性的示例 **/
-//        org.apache.ibatis.session.Configuration configuration = new org.apache.ibatis.session.Configuration();
-//        configuration.setMapUnderscoreToCamelCase(true);
-//        configuration.setCacheEnabled(true);
-//        configuration.setLazyLoadingEnabled(true);
-//        configuration.setMultipleResultSetsEnabled(true);
-//        configuration.setUseColumnLabel(true);
-//        configuration.setUseGeneratedKeys(false);
-//        configuration.setDefaultExecutorType(ExecutorType.SIMPLE);
-//        configuration.setDefaultStatementTimeout(25000);
-//        sqlSessionFactoryBean.setConfiguration(configuration);
-
         return sqlSessionFactoryBean.getObject();
     }
 
