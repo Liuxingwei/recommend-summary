@@ -1,6 +1,5 @@
 package cn.liuxingwei.spring.boot.config;
 
-import cn.liuxingwei.spring.boot.orm.domain.UserDao;
 import org.apache.ibatis.datasource.pooled.PooledDataSource;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
