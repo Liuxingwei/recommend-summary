@@ -15,7 +15,6 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
 @EnableTransactionManagement
-@MapperScan(basePackages = "cn.liuxingwei.spring.boot.orm.mapper", sqlSessionFactoryRef = "sqlSessionFactory")
 public class DataConfiguration {
 
     @Value("${mysql.driver}")
@@ -38,27 +37,6 @@ public class DataConfiguration {
         dataSource.setUsername(mysqlUsername);
         dataSource.setPassword(mysqlPassword);
         return dataSource;
-    }
-
-    @Bean
-    public SqlSessionFactory sqlSessionFactory() throws Exception{
-
-        SqlSessionFactoryBean sqlSessionFactoryBean = new SqlSessionFactoryBean();
-
-        sqlSessionFactoryBean.setDataSource(dataSource());
-
-        sqlSessionFactoryBean.setTypeAliasesPackage("cn.liuxingwei.spring.boot.orm.domain");
-
-        Resource[] resources = new PathMatchingResourcePatternResolver()
-                .getResources("classpath:cn/liuxingwei/spring/boot/orm/mapper/**/*.xml");
-        sqlSessionFactoryBean.setMapperLocations(resources);
-
-        return sqlSessionFactoryBean.getObject();
-    }
-
-    @Bean
-    public PlatformTransactionManager platformTransactionManager() {
-        return new DataSourceTransactionManager(dataSource());
     }
 
 }
