@@ -1,8 +1,7 @@
 package cn.liuxingwei.spring.boot.controller;
 
-import cn.liuxingwei.spring.boot.mapper.DirectAccountMapper;
-import cn.liuxingwei.spring.boot.model.DirectAccount;
-import cn.liuxingwei.spring.boot.model.User;
+import cn.liuxingwei.spring.boot.mapper.DirectUserMapper;
+import cn.liuxingwei.spring.boot.model.DirectUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,19 +16,21 @@ import static org.springframework.web.bind.annotation.RequestMethod.*;
 @RequestMapping("/")
 public class HomeController {
     @Autowired
-    private DirectAccountMapper directAccountMapper;
+    private DirectUserMapper directUserMapper;
 
     @RequestMapping(method = GET)
     public String home() {
-        List<DirectAccount> directAccountList = directAccountMapper.selectAll();
-        System.out.println(directAccountList.size());
+        List<DirectUser> directUserList = directUserMapper.selectAll();
+        System.out.println(directUserList.size());
         DateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-        for (DirectAccount directAccount : directAccountList) {
-            System.out.print(directAccount.getId());
+        for (DirectUser directUser : directUserList) {
+            System.out.print(directUser.getId());
             System.out.print("\t\t");
-            System.out.print(directAccount.getUserId());
+            System.out.print(directUser.getUserId());
             System.out.print("\t\t");
-            System.out.println(directAccount.getBalance());
+            System.out.print(directUser.getSpreaderId());
+            System.out.print("\t\t");
+            System.out.println(directUser.getFirstTotalRebate());
         }
         return "home";
     }
