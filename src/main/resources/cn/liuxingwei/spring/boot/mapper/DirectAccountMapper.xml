@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.liuxingwei.spring.boot.mapper.DirectAccountMapper">
+    <select id="selectAll" resultType="cn.liuxingwei.spring.boot.model.DirectAccount">
+        SELECT
+          id id,
+          time time,
+          user_id userId,
+          balance balance,
+          direct_code directCode
+        FROM
+          t_direct_account directAccount
+    </select>
+</mapper>

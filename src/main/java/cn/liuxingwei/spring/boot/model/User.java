@@ -1,7 +1,6 @@
 package cn.liuxingwei.spring.boot.model;
 
-import java.sql.Date;
-
+import java.sql.Timestamp;
 public class User {
     private Long id;
     private String time;
@@ -10,11 +9,11 @@ public class User {
     private String password;
     private Integer passwordContinueFails;
     private Boolean isPasswordLocked;
-    private Date passwordLockedTime;
+    private Timestamp passwordLockedTime;
     private Boolean isAllowLogin;
-    private Date lockTime;
+    private Timestamp lockTime;
     private Integer loginCount;
-    private Date lastLoginTime;
+    private Timestamp lastLoginTime;
     private Byte lastLoginClient;
     private String lastLoginIp;
     private Byte type;
@@ -49,7 +48,7 @@ public class User {
         return isPasswordLocked;
     }
 
-    public Date getPasswordLockedTime() {
+    public Timestamp getPasswordLockedTime() {
         return passwordLockedTime;
     }
 
@@ -57,7 +56,7 @@ public class User {
         return isAllowLogin;
     }
 
-    public Date getLockTime() {
+    public Timestamp getLockTime() {
         return lockTime;
     }
 
@@ -65,7 +64,7 @@ public class User {
         return loginCount;
     }
 
-    public Date getLastLoginTime() {
+    public Timestamp getLastLoginTime() {
         return lastLoginTime;
     }
 
@@ -117,7 +116,7 @@ public class User {
         isPasswordLocked = passwordLocked;
     }
 
-    public void setPasswordLockedTime(Date passwordLockedTime) {
+    public void setPasswordLockedTime(Timestamp passwordLockedTime) {
         this.passwordLockedTime = passwordLockedTime;
     }
 
@@ -125,7 +124,7 @@ public class User {
         isAllowLogin = allowLogin;
     }
 
-    public void setLockTime(Date lockTime) {
+    public void setLockTime(Timestamp lockTime) {
         this.lockTime = lockTime;
     }
 
@@ -133,7 +132,7 @@ public class User {
         this.loginCount = loginCount;
     }
 
-    public void setLastLoginTime(Date lastLoginTime) {
+    public void setLastLoginTime(Timestamp lastLoginTime) {
         this.lastLoginTime = lastLoginTime;
     }
 
