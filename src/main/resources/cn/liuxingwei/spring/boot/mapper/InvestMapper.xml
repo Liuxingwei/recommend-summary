@@ -130,4 +130,17 @@
     project_repeat_id, out_id, is_resolution
     from t_invest
   </select>
+  <select id="selectByUserId" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    <!--
+      根据user_id，获取用户的投资信息
+      @author liuxingwei
+    -->
+    select id, time, user_id, bid_id, amount, correct_amount, correct_interest, loan_service_fee_divide,
+    loan_service_fee_divide_left, loan_service_fee_divide_right, client, transfer_status,
+    debt_id, service_order_no, trust_order_no, invest_type, red_packet_amount, red_packet_id,
+    rate_id, rate_amount, is_use_rate, project_invest_id, project_user_id, project_invest_type,
+    project_repeat_id, out_id, is_resolution
+    from t_invest
+    where user_id = #{id,jdbcType=BIGINT}
+  </select>
 </mapper>

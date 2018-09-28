@@ -48,4 +48,11 @@ public interface DirectaccountMapper {
      * @mbg.generated
      */
     int updateByPrimaryKey(Directaccount record);
+
+    /**
+     * 根据用户id，获取直客推荐信息
+     * @param userId
+     * @return
+     */
+    Directaccount selectByUserId(Long userId);
 }

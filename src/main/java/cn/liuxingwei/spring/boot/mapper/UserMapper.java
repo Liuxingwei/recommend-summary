@@ -48,4 +48,12 @@ public interface UserMapper {
      * @mbg.generated
      */
     int updateByPrimaryKey(User record);
+
+    /**
+     * 获取用户信息附带其直客推荐信息
+     * @author liuxingwei
+     */
+    List<User> selectAllWithDirect();
+
+    List<User> selectByIdsWithDirect(Long[] ids);
 }

@@ -62,4 +62,9 @@
     select id, time, user_id, balance, direct_code
     from t_direct_account
   </select>
+  <select id="selectByUserId" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select id, time, user_id, balance, direct_code
+    from t_direct_account
+    where user_id = #{userId, jdbcType=BIGINT}
+  </select>
 </mapper>

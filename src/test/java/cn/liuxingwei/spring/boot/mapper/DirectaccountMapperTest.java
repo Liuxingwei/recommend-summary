@@ -21,4 +21,10 @@ public class DirectaccountMapperTest {
         List<Directaccount> directaccountList = directaccountMapper.selectAll();
         assertEquals(150, directaccountList.size());
     }
+
+    @Test
+    public void selectByUserId() {
+        Directaccount directaccount = directaccountMapper.selectByUserId(1L);
+        assertEquals("zxg2530", directaccount.getDirectCode());
+    }
 }
