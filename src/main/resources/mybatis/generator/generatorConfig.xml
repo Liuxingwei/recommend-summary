@@ -14,15 +14,15 @@
                         connectionURL="jdbc:mysql://localhost:3306/sp2p9?characterEncoding=UTF-8&amp;autoReconnect=true&amp;failOverReadOnly=false&amp;useSSL=false&amp;allowMultiQueries=true&amp;rewriteBatchedStatements=true"
                         userId="root"
                         password="123456"></jdbcConnection>
-        <javaModelGenerator targetPackage="cn.liuxingwei.spring.boot.model"
-                            targetProject="src/main/java">
+        <javaModelGenerator targetPackage="com.juqijinfu.p2p.platform.model"
+                            targetProject="recommend-summary/src/main/java">
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
-        <sqlMapGenerator targetPackage="cn.liuxingwei.spring.boot.mapper"
-                         targetProject="src/main/resources"/>
+        <sqlMapGenerator targetPackage="com.juqijinfu.p2p.platform.mapper"
+                         targetProject="recommend-summary/src/main/resources"/>
         <javaClientGenerator type="XMLMAPPER"
-                             targetPackage="cn.liuxingwei.spring.boot.mapper"
-                             targetProject="src/main/java"/>
+                             targetPackage="com.juqijinfu.p2p.platform.mapper"
+                             targetProject="recommend-summary/src/main/java"/>
         <table tableName="%">
             <generatedKey column="id" sqlStatement="MySql"/>
             <domainObjectRenamingRule searchString="^T" replaceString="" />
