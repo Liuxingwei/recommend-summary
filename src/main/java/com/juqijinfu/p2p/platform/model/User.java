@@ -1,6 +1,7 @@
 package com.juqijinfu.p2p.platform.model;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  *
@@ -406,6 +407,12 @@ public class User {
      */
     private Directaccount directaccount;
 
+	/**
+	 * 用户投资金额列表
+	 * @author
+	 */
+	private List<Invest> investList;
+
     /**
      * 获取用户直客推荐码
      *
@@ -425,4 +432,24 @@ public class User {
     public void setDirectaccount(Directaccount directaccount) {
         this.directaccount = directaccount;
     }
+
+	/**
+	 * 获取用户投资列表
+	 *
+	 * @author liuxingwei
+	 * @return
+	 */
+	public List<Invest> getInvestList() {
+    	return investList;
+	}
+
+	/**
+	 * 设置用户投资列表
+	 *
+	 * @author liuxingwei
+	 * @param investList 用户投资列表
+	 */
+	public void setInvestList(List<Invest> investList) {
+    	this.investList = investList;
+	}
 }

@@ -56,4 +56,20 @@ public interface UserMapper {
      * @return List<User>
      */
     List<User> selectByIdsWithDirect(Long[] ids);
+
+	/**
+	 * 获取用户信息列表，附带其直客推荐信息列表
+	 *
+	 * @author liuxingwei
+	 * @return
+	 */
+	List<User> selectAllWithInvest();
+
+	/**
+	 * 获取指定用户信息列表，聊赖其直客推荐信息列表
+	 *
+	 * @param ids 用户id构成的数组
+	 * @return
+	 */
+	List<User> selectByIdsWithInvest(Long[] ids);
 }

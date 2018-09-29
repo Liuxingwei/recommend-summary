@@ -99,9 +99,13 @@
     from t_user
   </select>
   <resultMap extends="BaseResultMap" id="WithDirectResultMap" type="com.juqijinfu.p2p.platform.model.User">
+    <!--
+      扩展了BaseResultMap，添加了附带的直客推荐信息
+      @author liuxingwei
+    -->
     <association column="id" property="directaccount" select="com.juqijinfu.p2p.platform.mapper.DirectaccountMapper.selectByUserId" />
   </resultMap>
-  <select id="selectAllWithDirect" parameterType="java.lang.Long" resultMap="WithDirectResultMap">
+  <select id="selectAllWithDirect" resultMap="WithDirectResultMap">
     <!--
       获取用户信息的同时，获取该用户的直客推广信息
       @author liuxingwei
@@ -114,6 +118,37 @@
   <select id="selectByIdsWithDirect" parameterType="arraylist" resultMap="WithDirectResultMap">
     <!--
       根据给定的用户id列表，获取用户信息列表，其中包含该用户的直客推广信息
+      @author liuxingwei
+    -->
+    select id, time, name, mobile, password, password_continue_fails, is_password_locked,
+    password_locked_time, is_allow_login, lock_time, login_count, last_login_time, last_login_client,
+    last_login_ip, type, platform_account, is_freeSigningContract
+    from t_user
+    where id in
+    <foreach close=")" collection="array" index="index" item="item" open="(" separator=",">
+      #{item}
+    </foreach>
+  </select>
+  <resultMap extends="BaseResultMap" id="WithInvestResultMap" type="com.juqijinfu.p2p.platform.model.User">
+    <!--
+      扩展了BaseResultMap，添加了用户投资信息
+      @author liuxingwei
+    -->
+    <collection property="investList" fetchType="lazy" column="id" select="com.juqijinfu.p2p.platform.mapper.InvestMapper.selectByUserId"/>
+  </resultMap>
+  <select id="selectAllWithInvest" resultMap="WithInvestResultMap">
+    <!--
+      获取用户信息列表的同时，获取用户的投资信息子列表
+      @author liuxingwei
+    -->
+    select id, time, name, mobile, password, password_continue_fails, is_password_locked,
+    password_locked_time, is_allow_login, lock_time, login_count, last_login_time, last_login_client,
+    last_login_ip, type, platform_account, is_freeSigningContract
+    from t_user
+  </select>
+  <select id="selectByIdsWithInvest" parameterType="arraylist" resultMap="WithInvestResultMap">
+    <!--
+      根据给定的用户id列表，获取用户信息列表，其中包含该用户的投资信息列表
       @author liuxingwei
     -->
     select id, time, name, mobile, password, password_continue_fails, is_password_locked,
