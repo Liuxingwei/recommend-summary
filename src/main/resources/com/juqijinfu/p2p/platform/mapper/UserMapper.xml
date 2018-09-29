@@ -24,9 +24,6 @@
     <result column="platform_account" jdbcType="BIT" property="platformAccount" />
     <result column="is_freeSigningContract" jdbcType="BIT" property="isFreesigningcontract" />
   </resultMap>
-  <resultMap id="WithDirectResultMap" type="com.juqijinfu.p2p.platform.model.User" extends="BaseResultMap">
-    <association property="directaccount" column="id" select="com.juqijinfu.p2p.platform.mapper.DirectaccountMapper.selectByUserId"></association>
-  </resultMap>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
     <!--
       WARNING - @mbg.generated
@@ -101,6 +98,9 @@
     last_login_ip, type, platform_account, is_freeSigningContract
     from t_user
   </select>
+  <resultMap extends="BaseResultMap" id="WithDirectResultMap" type="com.juqijinfu.p2p.platform.model.User">
+    <association column="id" property="directaccount" select="com.juqijinfu.p2p.platform.mapper.DirectaccountMapper.selectByUserId" />
+  </resultMap>
   <select id="selectAllWithDirect" parameterType="java.lang.Long" resultMap="WithDirectResultMap">
     <!--
       获取用户信息的同时，获取该用户的直客推广信息
@@ -121,7 +121,7 @@
     last_login_ip, type, platform_account, is_freeSigningContract
     from t_user
     where id in
-    <foreach collection="array" index="index" item="item" open="(" separator="," close=")">
+    <foreach close=")" collection="array" index="index" item="item" open="(" separator=",">
       #{item}
     </foreach>
   </select>
