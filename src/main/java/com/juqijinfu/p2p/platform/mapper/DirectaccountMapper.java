@@ -6,6 +6,9 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 
+/**
+ * 直客推广账户信息表 mapper
+ */
 @Component
 @Mapper
 public interface DirectaccountMapper {
@@ -51,6 +54,7 @@ public interface DirectaccountMapper {
 
     /**
      * 根据用户id，获取直客推荐信息
+     * @author liuxingwei
      * @param userId
      * @return
      */

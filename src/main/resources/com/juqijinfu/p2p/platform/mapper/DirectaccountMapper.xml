@@ -63,6 +63,10 @@
     from t_direct_account
   </select>
   <select id="selectByUserId" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    <!--
+      获取指定用户的直客推广信息
+      @author liuxingwei
+    -->
     select id, time, user_id, balance, direct_code
     from t_direct_account
     where user_id = #{userId, jdbcType=BIGINT}

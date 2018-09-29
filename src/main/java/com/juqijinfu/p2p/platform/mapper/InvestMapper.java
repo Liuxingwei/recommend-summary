@@ -6,6 +6,9 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 
+/**
+ * 投资表mapper
+ */
 @Component
 @Mapper
 public interface InvestMapper {

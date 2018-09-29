@@ -104,6 +104,7 @@
   <select id="selectAllWithDirect" parameterType="java.lang.Long" resultMap="WithDirectResultMap">
     <!--
       获取用户信息的同时，获取该用户的直客推广信息
+      @author liuxingwei
     -->
     select id, time, name, mobile, password, password_continue_fails, is_password_locked,
     password_locked_time, is_allow_login, lock_time, login_count, last_login_time, last_login_client,
@@ -113,6 +114,7 @@
   <select id="selectByIdsWithDirect" parameterType="arraylist" resultMap="WithDirectResultMap">
     <!--
       根据给定的用户id列表，获取用户信息列表，其中包含该用户的直客推广信息
+      @author liuxingwei
     -->
     select id, time, name, mobile, password, password_continue_fails, is_password_locked,
     password_locked_time, is_allow_login, lock_time, login_count, last_login_time, last_login_client,

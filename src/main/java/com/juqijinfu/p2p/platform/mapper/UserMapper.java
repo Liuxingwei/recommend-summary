@@ -6,6 +6,9 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 
+/**
+ * 用户表 mapper
+ */
 @Component
 @Mapper
 public interface UserMapper {
@@ -50,10 +53,17 @@ public interface UserMapper {
     int updateByPrimaryKey(User record);
 
     /**
-     * 获取用户信息附带其直客推荐信息
+     * 获取用户信息列表附带其直客推荐信息
      * @author liuxingwei
+     * @return List<User>
      */
     List<User> selectAllWithDirect();
 
+    /**
+     * 获取指定用户的信息列表，附带其直客推荐信息
+     * @author liuxingwei
+     * @param ids 用户id构成的数组
+     * @return List<User>
+     */
     List<User> selectByIdsWithDirect(Long[] ids);
 }
