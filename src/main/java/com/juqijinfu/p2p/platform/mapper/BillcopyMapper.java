@@ -1,6 +1,6 @@
 package com.juqijinfu.p2p.platform.mapper;
 
-import com.juqijinfu.p2p.platform.model.Billcopy;
+import com.juqijinfu.p2p.platform.domain.Billcopy;
 import java.util.List;
 
 public interface BillcopyMapper {

@@ -1,6 +1,6 @@
 package com.juqijinfu.p2p.platform.mapper;
 
-import com.juqijinfu.p2p.platform.model.Auditsubjectbid;
+import com.juqijinfu.p2p.platform.domain.Auditsubjectbid;
 
 import java.util.List;
 

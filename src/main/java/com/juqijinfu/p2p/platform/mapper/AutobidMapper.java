@@ -1,6 +1,6 @@
 package com.juqijinfu.p2p.platform.mapper;
 
-import com.juqijinfu.p2p.platform.model.Autobid;
+import com.juqijinfu.p2p.platform.domain.Autobid;
 import java.util.List;
 
 public interface AutobidMapper {

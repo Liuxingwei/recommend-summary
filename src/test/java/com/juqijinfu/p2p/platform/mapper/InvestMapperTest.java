@@ -1,6 +1,6 @@
 package com.juqijinfu.p2p.platform.mapper;
 
-import com.juqijinfu.p2p.platform.model.Invest;
+import com.juqijinfu.p2p.platform.domain.Invest;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;

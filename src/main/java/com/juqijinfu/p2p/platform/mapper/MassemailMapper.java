@@ -1,6 +1,6 @@
 package com.juqijinfu.p2p.platform.mapper;
 
-import com.juqijinfu.p2p.platform.model.Massemail;
+import com.juqijinfu.p2p.platform.domain.Massemail;
 import java.util.List;
 
 public interface MassemailMapper {

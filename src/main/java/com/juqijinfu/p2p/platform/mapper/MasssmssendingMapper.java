@@ -1,6 +1,6 @@
 package com.juqijinfu.p2p.platform.mapper;
 
-import com.juqijinfu.p2p.platform.model.Masssmssending;
+import com.juqijinfu.p2p.platform.domain.Masssmssending;
 import java.util.List;
 
 public interface MasssmssendingMapper {

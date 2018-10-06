@@ -1,6 +1,6 @@
 package com.juqijinfu.p2p.platform.mapper;
 
-import com.juqijinfu.p2p.platform.model.Templatepact;
+import com.juqijinfu.p2p.platform.domain.Templatepact;
 import java.util.List;
 
 public interface TemplatepactMapper {

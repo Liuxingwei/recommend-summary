@@ -1,6 +1,6 @@
 package com.juqijinfu.p2p.platform.mapper;
 
-import com.juqijinfu.p2p.platform.model.Redpacketaccount;
+import com.juqijinfu.p2p.platform.domain.Redpacketaccount;
 import java.util.List;
 
 public interface RedpacketaccountMapper {

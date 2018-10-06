@@ -1,6 +1,6 @@
 package com.juqijinfu.p2p.platform.mapper;
 
-import com.juqijinfu.p2p.platform.model.Projectratediff;
+import com.juqijinfu.p2p.platform.domain.Projectratediff;
 import java.util.List;
 
 public interface ProjectratediffMapper {

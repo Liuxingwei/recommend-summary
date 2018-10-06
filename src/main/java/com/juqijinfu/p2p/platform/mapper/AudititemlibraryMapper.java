@@ -1,6 +1,6 @@
 package com.juqijinfu.p2p.platform.mapper;
 
-import com.juqijinfu.p2p.platform.model.Audititemlibrary;
+import com.juqijinfu.p2p.platform.domain.Audititemlibrary;
 
 import java.util.List;
 

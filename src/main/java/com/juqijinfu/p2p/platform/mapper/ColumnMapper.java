@@ -1,6 +1,6 @@
 package com.juqijinfu.p2p.platform.mapper;
 
-import com.juqijinfu.p2p.platform.model.Column;
+import com.juqijinfu.p2p.platform.domain.Column;
 import java.util.List;
 
 public interface ColumnMapper {

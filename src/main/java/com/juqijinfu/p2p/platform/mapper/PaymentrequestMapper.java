@@ -1,6 +1,6 @@
 package com.juqijinfu.p2p.platform.mapper;
 
-import com.juqijinfu.p2p.platform.model.Paymentrequest;
+import com.juqijinfu.p2p.platform.domain.Paymentrequest;
 
 import java.util.List;
 

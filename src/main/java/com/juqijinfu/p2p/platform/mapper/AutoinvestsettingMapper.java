@@ -1,6 +1,6 @@
 package com.juqijinfu.p2p.platform.mapper;
 
-import com.juqijinfu.p2p.platform.model.Autoinvestsetting;
+import com.juqijinfu.p2p.platform.domain.Autoinvestsetting;
 
 import java.util.List;
 

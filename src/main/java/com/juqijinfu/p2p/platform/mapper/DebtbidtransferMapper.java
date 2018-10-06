@@ -1,6 +1,6 @@
 package com.juqijinfu.p2p.platform.mapper;
 
-import com.juqijinfu.p2p.platform.model.Debtbidtransfer;
+import com.juqijinfu.p2p.platform.domain.Debtbidtransfer;
 import java.util.List;
 
 public interface DebtbidtransferMapper {

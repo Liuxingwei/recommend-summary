@@ -1,6 +1,6 @@
 package com.juqijinfu.p2p.platform.mapper;
 
-import com.juqijinfu.p2p.platform.model.Wealthcircleaccount;
+import com.juqijinfu.p2p.platform.domain.Wealthcircleaccount;
 import java.util.List;
 
 public interface WealthcircleaccountMapper {

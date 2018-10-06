@@ -1,6 +1,6 @@
 package com.juqijinfu.p2p.platform.mapper;
 
-import com.juqijinfu.p2p.platform.model.Debtbidbill;
+import com.juqijinfu.p2p.platform.domain.Debtbidbill;
 
 import java.util.List;
 

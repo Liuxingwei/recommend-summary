@@ -1,6 +1,6 @@
 package com.juqijinfu.p2p.platform.mapper;
 
-import com.juqijinfu.p2p.platform.model.Sequenceorderno;
+import com.juqijinfu.p2p.platform.domain.Sequenceorderno;
 
 import java.util.List;
 

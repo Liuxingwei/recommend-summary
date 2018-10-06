@@ -1,6 +1,6 @@
 package com.juqijinfu.p2p.platform.mapper;
 
-import com.juqijinfu.p2p.platform.model.Projectinvestout;
+import com.juqijinfu.p2p.platform.domain.Projectinvestout;
 import java.util.List;
 
 public interface ProjectinvestoutMapper {

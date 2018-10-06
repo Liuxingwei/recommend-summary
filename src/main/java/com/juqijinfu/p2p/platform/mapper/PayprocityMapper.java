@@ -1,6 +1,6 @@
 package com.juqijinfu.p2p.platform.mapper;
 
-import com.juqijinfu.p2p.platform.model.Payprocity;
+import com.juqijinfu.p2p.platform.domain.Payprocity;
 
 import java.util.List;
 

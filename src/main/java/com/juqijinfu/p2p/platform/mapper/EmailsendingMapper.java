@@ -1,6 +1,6 @@
 package com.juqijinfu.p2p.platform.mapper;
 
-import com.juqijinfu.p2p.platform.model.Emailsending;
+import com.juqijinfu.p2p.platform.domain.Emailsending;
 import java.util.List;
 
 public interface EmailsendingMapper {

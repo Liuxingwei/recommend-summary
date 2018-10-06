@@ -1,6 +1,6 @@
 package com.juqijinfu.p2p.platform.mapper;
 
-import com.juqijinfu.p2p.platform.model.Wealthcirclesetting;
+import com.juqijinfu.p2p.platform.domain.Wealthcirclesetting;
 
 import java.util.List;
 

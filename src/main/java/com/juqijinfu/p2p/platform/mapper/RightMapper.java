@@ -1,6 +1,6 @@
 package com.juqijinfu.p2p.platform.mapper;
 
-import com.juqijinfu.p2p.platform.model.Right;
+import com.juqijinfu.p2p.platform.domain.Right;
 import java.util.List;
 
 import org.apache.ibatis.annotations.Param;

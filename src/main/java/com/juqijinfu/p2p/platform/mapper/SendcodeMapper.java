@@ -1,6 +1,6 @@
 package com.juqijinfu.p2p.platform.mapper;
 
-import com.juqijinfu.p2p.platform.model.Sendcode;
+import com.juqijinfu.p2p.platform.domain.Sendcode;
 
 import java.util.List;
 

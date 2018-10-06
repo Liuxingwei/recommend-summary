@@ -1,6 +1,6 @@
 package com.juqijinfu.p2p.platform.mapper;
 
-import com.juqijinfu.p2p.platform.model.Experiencebid;
+import com.juqijinfu.p2p.platform.domain.Experiencebid;
 import java.util.List;
 
 public interface ExperiencebidMapper {

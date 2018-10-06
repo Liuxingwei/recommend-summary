@@ -1,6 +1,6 @@
 package com.juqijinfu.p2p.platform.mapper;
 
-import com.juqijinfu.p2p.platform.model.Rechargeuser;
+import com.juqijinfu.p2p.platform.domain.Rechargeuser;
 
 import java.util.List;
 

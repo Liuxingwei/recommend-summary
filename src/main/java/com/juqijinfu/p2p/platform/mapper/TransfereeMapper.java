@@ -1,6 +1,6 @@
 package com.juqijinfu.p2p.platform.mapper;
 
-import com.juqijinfu.p2p.platform.model.Transferee;
+import com.juqijinfu.p2p.platform.domain.Transferee;
 import java.util.List;
 
 public interface TransfereeMapper {

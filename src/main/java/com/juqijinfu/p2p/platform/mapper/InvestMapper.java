@@ -1,6 +1,6 @@
 package com.juqijinfu.p2p.platform.mapper;
 
-import com.juqijinfu.p2p.platform.model.Invest;
+import com.juqijinfu.p2p.platform.domain.Invest;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Component;
 

@@ -1,6 +1,6 @@
 package com.juqijinfu.p2p.platform.mapper;
 
-import com.juqijinfu.p2p.platform.model.Creditlevel;
+import com.juqijinfu.p2p.platform.domain.Creditlevel;
 import java.util.List;
 
 public interface CreditlevelMapper {

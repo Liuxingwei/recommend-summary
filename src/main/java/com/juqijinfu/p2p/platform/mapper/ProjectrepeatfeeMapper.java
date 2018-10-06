@@ -1,6 +1,6 @@
 package com.juqijinfu.p2p.platform.mapper;
 
-import com.juqijinfu.p2p.platform.model.Projectrepeatfee;
+import com.juqijinfu.p2p.platform.domain.Projectrepeatfee;
 import java.util.List;
 
 public interface ProjectrepeatfeeMapper {

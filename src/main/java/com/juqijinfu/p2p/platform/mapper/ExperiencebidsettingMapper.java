@@ -1,6 +1,6 @@
 package com.juqijinfu.p2p.platform.mapper;
 
-import com.juqijinfu.p2p.platform.model.Experiencebidsetting;
+import com.juqijinfu.p2p.platform.domain.Experiencebidsetting;
 
 import java.util.List;
 

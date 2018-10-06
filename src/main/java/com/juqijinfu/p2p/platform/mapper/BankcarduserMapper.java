@@ -1,6 +1,6 @@
 package com.juqijinfu.p2p.platform.mapper;
 
-import com.juqijinfu.p2p.platform.model.Bankcarduser;
+import com.juqijinfu.p2p.platform.domain.Bankcarduser;
 
 import java.util.List;
 

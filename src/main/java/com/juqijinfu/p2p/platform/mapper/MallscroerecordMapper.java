@@ -1,6 +1,6 @@
 package com.juqijinfu.p2p.platform.mapper;
 
-import com.juqijinfu.p2p.platform.model.Mallscroerecord;
+import com.juqijinfu.p2p.platform.domain.Mallscroerecord;
 import java.util.List;
 
 public interface MallscroerecordMapper {

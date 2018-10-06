@@ -1,6 +1,6 @@
 package com.juqijinfu.p2p.platform.mapper;
 
-import com.juqijinfu.p2p.platform.model.Userfund;
+import com.juqijinfu.p2p.platform.domain.Userfund;
 
 import java.util.List;
 

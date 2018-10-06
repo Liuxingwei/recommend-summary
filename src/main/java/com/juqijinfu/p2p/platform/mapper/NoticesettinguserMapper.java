@@ -1,6 +1,6 @@
 package com.juqijinfu.p2p.platform.mapper;
 
-import com.juqijinfu.p2p.platform.model.Noticesettinguser;
+import com.juqijinfu.p2p.platform.domain.Noticesettinguser;
 import java.util.List;
 
 public interface NoticesettinguserMapper {

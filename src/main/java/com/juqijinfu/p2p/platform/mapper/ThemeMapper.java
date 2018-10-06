@@ -1,6 +1,6 @@
 package com.juqijinfu.p2p.platform.mapper;
 
-import com.juqijinfu.p2p.platform.model.Theme;
+import com.juqijinfu.p2p.platform.domain.Theme;
 
 import java.util.List;
 

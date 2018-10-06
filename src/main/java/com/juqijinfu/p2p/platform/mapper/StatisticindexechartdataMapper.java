@@ -1,6 +1,6 @@
 package com.juqijinfu.p2p.platform.mapper;
 
-import com.juqijinfu.p2p.platform.model.Statisticindexechartdata;
+import com.juqijinfu.p2p.platform.domain.Statisticindexechartdata;
 
 import java.util.List;
 

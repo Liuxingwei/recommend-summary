@@ -1,6 +1,6 @@
 package com.juqijinfu.p2p.platform.mapper;
 
-import com.juqijinfu.p2p.platform.model.Information;
+import com.juqijinfu.p2p.platform.domain.Information;
 import java.util.List;
 
 public interface InformationMapper {

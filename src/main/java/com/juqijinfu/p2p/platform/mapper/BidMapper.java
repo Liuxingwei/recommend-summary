@@ -1,6 +1,6 @@
 package com.juqijinfu.p2p.platform.mapper;
 
-import com.juqijinfu.p2p.platform.model.Bid;
+import com.juqijinfu.p2p.platform.domain.Bid;
 
 import java.util.List;
 

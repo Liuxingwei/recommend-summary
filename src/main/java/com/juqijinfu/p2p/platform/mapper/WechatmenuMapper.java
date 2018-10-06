@@ -1,6 +1,6 @@
 package com.juqijinfu.p2p.platform.mapper;
 
-import com.juqijinfu.p2p.platform.model.Wechatmenu;
+import com.juqijinfu.p2p.platform.domain.Wechatmenu;
 
 import java.util.List;
 

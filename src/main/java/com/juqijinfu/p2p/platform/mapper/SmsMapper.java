@@ -1,6 +1,6 @@
 package com.juqijinfu.p2p.platform.mapper;
 
-import com.juqijinfu.p2p.platform.model.Sms;
+import com.juqijinfu.p2p.platform.domain.Sms;
 
 import java.util.List;
 

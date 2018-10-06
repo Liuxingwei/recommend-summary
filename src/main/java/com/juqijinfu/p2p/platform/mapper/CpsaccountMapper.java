@@ -1,6 +1,6 @@
 package com.juqijinfu.p2p.platform.mapper;
 
-import com.juqijinfu.p2p.platform.model.Cpsaccount;
+import com.juqijinfu.p2p.platform.domain.Cpsaccount;
 import java.util.List;
 
 public interface CpsaccountMapper {

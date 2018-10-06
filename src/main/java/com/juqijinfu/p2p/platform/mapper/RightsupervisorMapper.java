@@ -1,6 +1,6 @@
 package com.juqijinfu.p2p.platform.mapper;
 
-import com.juqijinfu.p2p.platform.model.Rightsupervisor;
+import com.juqijinfu.p2p.platform.domain.Rightsupervisor;
 
 import java.util.List;
 

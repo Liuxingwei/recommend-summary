@@ -1,6 +1,6 @@
 package com.juqijinfu.p2p.platform.mapper;
 
-import com.juqijinfu.p2p.platform.model.Paymentcallback;
+import com.juqijinfu.p2p.platform.domain.Paymentcallback;
 import java.util.List;
 
 public interface PaymentcallbackMapper {

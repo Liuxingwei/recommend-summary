@@ -1,6 +1,6 @@
 package com.juqijinfu.p2p.platform.mapper;
 
-import com.juqijinfu.p2p.platform.model.Malladdress;
+import com.juqijinfu.p2p.platform.domain.Malladdress;
 import java.util.List;
 
 public interface MalladdressMapper {

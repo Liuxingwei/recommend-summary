@@ -1,6 +1,6 @@
 package com.juqijinfu.p2p.platform.mapper;
 
-import com.juqijinfu.p2p.platform.model.Withdrawaluser;
+import com.juqijinfu.p2p.platform.domain.Withdrawaluser;
 
 import java.util.List;
 

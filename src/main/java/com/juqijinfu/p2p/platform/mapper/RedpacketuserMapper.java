@@ -1,6 +1,6 @@
 package com.juqijinfu.p2p.platform.mapper;
 
-import com.juqijinfu.p2p.platform.model.Redpacketuser;
+import com.juqijinfu.p2p.platform.domain.Redpacketuser;
 
 import java.util.List;
 

@@ -1,6 +1,6 @@
 package com.juqijinfu.p2p.platform.mapper;
 
-import com.juqijinfu.p2p.platform.model.Eventsupervisor;
+import com.juqijinfu.p2p.platform.domain.Eventsupervisor;
 import java.util.List;
 
 public interface EventsupervisorMapper {

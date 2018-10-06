@@ -1,6 +1,6 @@
 package com.juqijinfu.p2p.platform.mapper;
 
-import com.juqijinfu.p2p.platform.model.Supervisor;
+import com.juqijinfu.p2p.platform.domain.Supervisor;
 import java.util.List;
 
 public interface SupervisorMapper {

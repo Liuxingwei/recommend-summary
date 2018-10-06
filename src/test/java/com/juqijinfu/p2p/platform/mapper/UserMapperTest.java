@@ -1,6 +1,6 @@
 package com.juqijinfu.p2p.platform.mapper;
 
-import com.juqijinfu.p2p.platform.model.User;
+import com.juqijinfu.p2p.platform.domain.User;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -46,7 +46,7 @@ public class UserMapperTest {
         List<User> userList = userMapper.selectAllWithDirect();
         User user = userList.get(0);
         assertEquals(1374, userList.size());
-        assertEquals("zxg2530", user.getDiretaccount().getDirectCode());
+        assertEquals("zxg2530", user.getDirectaccount().getDirectCode());
     }
 
     /**
@@ -58,7 +58,7 @@ public class UserMapperTest {
         Long[] ids = {1L, 2L, 3L, 4L, 5L};
         List<User> userList = userMapper.selectByIdsWithDirect(ids);
         assertEquals(5, userList.size());
-        assertEquals("zxg2530", userList.get(0).getDiretaccount().getDirectCode());
+        assertEquals("zxg2530", userList.get(0).getDirectaccount().getDirectCode());
     }
 
     /**

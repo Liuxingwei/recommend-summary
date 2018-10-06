@@ -1,6 +1,6 @@
 package com.juqijinfu.p2p.platform.mapper;
 
-import com.juqijinfu.p2p.platform.model.Conversionuser;
+import com.juqijinfu.p2p.platform.domain.Conversionuser;
 import java.util.List;
 
 public interface ConversionuserMapper {

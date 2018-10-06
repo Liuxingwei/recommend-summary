@@ -1,6 +1,6 @@
 package com.juqijinfu.p2p.platform.mapper;
 
-import com.juqijinfu.p2p.platform.model.Debtitemsupervisor;
+import com.juqijinfu.p2p.platform.domain.Debtitemsupervisor;
 import java.util.List;
 
 public interface DebtitemsupervisorMapper {

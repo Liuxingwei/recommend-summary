@@ -1,6 +1,6 @@
 package com.juqijinfu.p2p.platform.mapper;
 
-import com.juqijinfu.p2p.platform.model.Directaccount;
+import com.juqijinfu.p2p.platform.domain.Directaccount;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Component;
 

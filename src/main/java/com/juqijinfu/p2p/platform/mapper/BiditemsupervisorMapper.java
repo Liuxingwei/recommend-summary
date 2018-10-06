@@ -1,6 +1,6 @@
 package com.juqijinfu.p2p.platform.mapper;
 
-import com.juqijinfu.p2p.platform.model.Biditemsupervisor;
+import com.juqijinfu.p2p.platform.domain.Biditemsupervisor;
 
 import java.util.List;
 

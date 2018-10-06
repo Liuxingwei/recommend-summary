@@ -1,6 +1,6 @@
 package com.juqijinfu.p2p.platform.mapper;
 
-import com.juqijinfu.p2p.platform.model.Templatenotice;
+import com.juqijinfu.p2p.platform.domain.Templatenotice;
 import java.util.List;
 
 public interface TemplatenoticeMapper {
