@@ -134,7 +134,7 @@
       扩展了BaseResultMap，添加了用户投资信息
       @author liuxingwei
     -->
-    <collection column="id" fetchType="lazy" property="investList" select="com.juqijinfu.p2p.platform.mapper.InvestMapper.selectByUserId" />
+    <collection column="id" fetchType="lazy" property="investList" select="com.juqijinfu.p2p.platform.mapper.InvestMapper.selectByUserIdWithBid" />
   </resultMap>
   <select id="selectAllWithInvest" resultMap="WithInvestResultMap">
     <!--

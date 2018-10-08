@@ -130,7 +130,14 @@
     project_repeat_id, out_id, is_resolution
     from t_invest
   </select>
-  <select id="selectByUserId" parameterType="java.lang.Long" resultMap="BaseResultMap">
+  <resultMap extends="BaseResultMap" id="WithBidResultMap" type="com.juqijinfu.p2p.platform.domain.Invest">
+    <!--
+      扩展了BaseResultMap，添加了用户投资信息
+      @author liuxingwei
+    -->
+    <association property="bid" column="bid_id" select="com.juqijinfu.p2p.platform.mapper.BidMapper.selectByPrimaryKey" />
+  </resultMap>
+  <select id="selectByUserIdWithBid" parameterType="java.lang.Long" resultMap="WithBidResultMap">
     <!--
       根据user_id，获取用户的投资信息
       @author liuxingwei

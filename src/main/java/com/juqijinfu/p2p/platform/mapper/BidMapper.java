@@ -1,9 +1,13 @@
 package com.juqijinfu.p2p.platform.mapper;
 
 import com.juqijinfu.p2p.platform.domain.Bid;
+import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
+@Mapper
+@Component
 public interface BidMapper {
 
 	/**

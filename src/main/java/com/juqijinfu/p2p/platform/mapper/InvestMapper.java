@@ -1,6 +1,7 @@
 package com.juqijinfu.p2p.platform.mapper;
 
 import com.juqijinfu.p2p.platform.domain.Invest;
+import com.juqijinfu.p2p.platform.domain.User;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Component;
 
@@ -43,10 +44,10 @@ public interface InvestMapper {
 	int updateByPrimaryKey(Invest record);
 
 	/**
-     * 根据用户id（user_id）获取用户投资信息
+     * 根据用户id（user_id）获取用户投资信息，附带关联的投资项目信息
      * @author liuxinwei
      *
      * @param userId the value for t_invest.user_id
      */
-     List<Invest> selectByUserId(Long userId);
+     List<Invest> selectByUserIdWithBid(Long userId);
 }
