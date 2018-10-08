@@ -148,6 +148,6 @@
     rate_id, rate_amount, is_use_rate, project_invest_id, project_user_id, project_invest_type,
     project_repeat_id, out_id, is_resolution
     from t_invest
-    where user_id = #{id,jdbcType=BIGINT}
+    where user_id = #{userId,jdbcType=BIGINT}
   </select>
 </mapper>

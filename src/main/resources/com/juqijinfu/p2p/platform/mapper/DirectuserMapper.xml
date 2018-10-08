@@ -68,4 +68,25 @@
     select id, time, user_id, spreader_id, total_invest, first_total_rebate, second_total_rebate
     from t_direct_user
   </select>
+  <resultMap extends="BaseResultMap" id="WithUserinfoAndInvestListResultMap" type="com.juqijinfu.p2p.platform.domain.Directuser">
+    <!--
+      关联用户信息
+      @author liuxingwei
+    -->
+    <association property="user" column="user_id" fetchType="lazy" select="com.juqijinfu.p2p.platform.mapper.UserMapper.selectByPrimaryKey" />
+    <!--
+      关联的投资信息列表
+      @author liuxingwei
+    -->
+    <collection property="investList" column="user_id" fetchType="lazy" select="com.juqijinfu.p2p.platform.mapper.InvestMapper.selectByUserIdWithBid" />
+  </resultMap>
+  <select id="selectBySpreaderIdWithUserinfoAndInvestList" parameterType="java.lang.Long" resultMap="WithUserinfoAndInvestListResultMap">
+    <!--
+      通过推荐人id获取被推荐人列表及其用户信息、投资信息
+      @author liuxingwei
+    -->
+    select id, time, user_id, spreader_id, total_invest, first_total_rebate, second_total_rebate
+    from t_direct_user
+    where spreader_id = #{spreaderId,jdbcType=BIGINT}
+  </select>
 </mapper>

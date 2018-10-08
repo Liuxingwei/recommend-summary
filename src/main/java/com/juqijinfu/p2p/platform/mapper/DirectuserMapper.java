@@ -39,4 +39,11 @@ public interface DirectuserMapper {
 	 * @mbg.generated
 	 */
 	int updateByPrimaryKey(Directuser record);
+
+	/**
+	 * 通过推荐人id获取被推荐人列表（附带被推荐人信息及其投资情况列表）
+	 * @param spreaderId
+	 * @return
+	 */
+	List<Directuser> selectBySpreaderIdWithUserinfoAndInvestList(Long spreaderId);
 }
