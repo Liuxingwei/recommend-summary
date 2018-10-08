@@ -100,10 +100,15 @@
   </select>
   <resultMap extends="BaseResultMap" id="WithDirectResultMap" type="com.juqijinfu.p2p.platform.domain.User">
     <!--
-      扩展了BaseResultMap，添加了附带的直客推荐信息
+      添加了附带的直客推荐信息
       @author liuxingwei
     -->
     <association column="id" property="directaccount" select="com.juqijinfu.p2p.platform.mapper.DirectaccountMapper.selectByUserId" />
+    <!--
+      添加了附带的直客被推荐人列表
+      @author liuxingwei
+    -->
+    <collection property="directuserList" fetchType="lazy" column="id" select="com.juqijinfu.p2p.platform.mapper.DirectuserMapper.selectBySpreaderIdWithUserinfoAndInvestList" />
   </resultMap>
   <select id="selectAllWithDirect" resultMap="WithDirectResultMap">
     <!--

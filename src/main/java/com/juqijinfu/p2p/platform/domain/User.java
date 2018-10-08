@@ -432,4 +432,10 @@ public class User {
 	 */
 	private List<Invest> investList;
 
+	/**
+	 * 直客被推荐人列表
+	 * @author liuxingwei
+	 */
+	private List<Directuser> directuserList;
+
 }

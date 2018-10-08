@@ -55,10 +55,12 @@ public class UserMapperTest {
      */
     @Test
     public void selectByIdsWithDirect() {
-        Long[] ids = {1L, 2L, 3L, 4L, 5L};
+        Long[] ids = {38L, 2L, 3L, 4L, 5L};
         List<User> userList = userMapper.selectByIdsWithDirect(ids);
         assertEquals(5, userList.size());
-        assertEquals("zxg2530", userList.get(0).getDirectaccount().getDirectCode());
+        assertEquals("zd2111", userList.get(4).getDirectaccount().getDirectCode());
+        Long directuserId = 48L;
+        assertEquals(directuserId, userList.get(4).getDirectuserList().get(0).getUserId());
     }
 
     /**
